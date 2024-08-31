@@ -24,3 +24,11 @@ panic = "abort"
 opt-level = 3
 lto = true
 panic = "abort"
+
+[patch.crates-io]
+bitcoin = { git = "https://github.com/benthecarman/rust-bitcoin.git", branch = "testnet4-30-2" }
+
+lightning = { git = 'https://github.com/benthecarman/rust-lightning.git', rev = "0fe1faaa387e77acc4ca62c5b006e78677b175ae" }
+lightning-rapid-gossip-sync = { git = 'https://github.com/benthecarman/rust-lightning.git', rev = "0fe1faaa387e77acc4ca62c5b006e78677b175ae" }
+lightning-block-sync = { git = 'https://github.com/benthecarman/rust-lightning.git', rev = "0fe1faaa387e77acc4ca62c5b006e78677b175ae" }
+lightning-net-tokio = { git = 'https://github.com/benthecarman/rust-lightning.git', rev = "0fe1faaa387e77acc4ca62c5b006e78677b175ae" }

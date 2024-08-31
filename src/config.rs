@@ -43,6 +43,7 @@ pub(crate) fn network() -> Network {
 		"mainnet" => Network::Bitcoin,
 		"bitcoin" => Network::Bitcoin,
 		"testnet" => Network::Testnet,
+		"testnet4" => Network::Testnet4,
 		"signet" => Network::Signet,
 		"regtest" => Network::Regtest,
 		_ => panic!("Invalid network"),
