@@ -15,7 +15,7 @@ use lightning_block_sync::http::HttpEndpoint;
 use tokio_postgres::Config;
 
 pub(crate) const SCHEMA_VERSION: i32 = 13;
-pub(crate) const SYMLINK_GRANULARITY_INTERVAL: u32 = 3600 * 3; // three hours
+pub(crate) const SYMLINK_GRANULARITY_INTERVAL: u32 = 60 * 10; // 10 minutes
 pub(crate) const MAX_SNAPSHOT_SCOPE: u32 = 3600 * 24 * 21; // three weeks
 // generate symlinks based on a 3-hour-granularity
 /// If the last update in either direction was more than six days ago, we send a reminder
